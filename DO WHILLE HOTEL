@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+string first_name;
+string last_name;
+char gender; 
+int amountRegular=1500, amountDeluxe=3000, amountGrand= 5000, age, daysRegular, daysDeluxe, daysGrand;
+float payment, totalPrice;
+char answer;
+do{ //do
+cout << "==============================================" <<endl;
+cout << "Good day, "<< first_name << endl;
+cout << "This is the rooms that we offer:" <<endl;
+cout << "Regular: " <<amountRegular <<" per day" <<endl;
+cout << "Deluxe: " <<amountDeluxe <<" per day" <<endl;
+cout << "Grand: " <<amountGrand <<" per day" <<endl;
+cout << "==============================================" <<endl;
+cout << "How long will be staying in our care?" <<endl;
+cout << "Regular: ";
+cin >> daysRegular;
+cout << "Deluxer: ";
+cin >> daysDeluxe;
+cout << "Grand: ";
+cin >> daysGrand;
+cout << "==============================================" <<endl; 
+cout << "Enter any letter to continue: ";
+cin >> answer;
+
+  break;
+  }
+while (answer != 'Y' || answer != 'y'); { //while
+  
+totalPrice = (daysRegular * amountRegular) + (daysDeluxe * amountDeluxe) + (daysGrand * amountGrand);
+cout << "Your total is: " << totalPrice <<endl;
+cout << "Your payment is: ";
+cin >> payment;
+while (payment < totalPrice) {  
+cout << "==============================================" <<endl;  
+cout << "Not enough amount, Your total price is: " << totalPrice << endl;
+cout << "Please enter another amount: ";
+cin >> payment;
+cout << "==============================================" <<endl;
+  if (payment >= totalPrice) {
+cout << "==============================================" <<endl;  
+cout << "Your amount of payment: " << payment <<endl;
+float change = payment - totalPrice;
+cout << "Your change is: " << change <<endl;
+cout << "=========COME AGAIN AND STAY AT US!============" <<endl;
+  }
+
+}
+
+}
+  }
+
+  
