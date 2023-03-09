@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+  int day;
+
+  cout << "Enter a day in a week(1-7): ";
+    cin >> day;
+  switch (day) {
+    case 1:
+    cout << "Monday" << endl;
+    break;
+    case 2:
+    cout << "Tuesday" << endl;
+    break;
+    case 3:
+    cout << "Wednesday" << endl;
+    break;
+    case 4:
+    cout << "Thursday" << endl;
+    break;
+    case 5:
+    cout << "Friday" << endl;
+    break;
+    case 6:
+    cout << "Saturday" << endl;
+    break;    
+    case 7:
+    cout << "Sunday" << endl;
+    break;
+    default:
+    cout << "Invalid grade" <<endl;
+  }
+ 
+  }
+/* char grade;
+
+  cout << "Enter your grade (A-E): ";
+    cin >> grade;
+  switch (grade) {
+    case 'A':
+    cout << "Excellent!" << endl;
+    break;
+    case 'B':
+    cout << "Very good!" << endl;
+    break;
+    case 'C':
+    cout << "Well done!" << endl;
+    break;
+    case 'D':
+    cout << "You passed" << endl;
+    break;
+    case 'E':
+    cout << "Try again" << endl;
+    break;
+
+    default:
+    cout << "Invalid grade" <<endl;
+  }
+  cout << "Your grade is: " << grade << endl;
+
+  } */
+
+
+
+
+
+
+  
+/*
+int a, b;
+cout << "Enter a first number:";
+cin >> a;
+cout << "Enter a number: ";
+cin >> b;
+  
+  if (a<=180){
+    //if the outer expression is true, tes the inner condition
+    if (b>=60) {
+      cout << "Value of a is less or equal to than to 180 and b is NOT greater than or equal to 60" << endl;
+      
+    }
+    else {
+      cout << "Value of a is greather than 180 and b is NOT greater than or equal to 60" <<endl;
+    }
+  }
+  std::cout << "Exact value of a is: " << a << endl;
+    std::cout << "Exact value of b is: " << b << endl;
+}
+*/
