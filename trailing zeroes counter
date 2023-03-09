@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int num=0, counter=0, trailing;
+
+  cout << "Enter a number: ";
+  cin >> num;
+
+  if (num == 0) {
+    counter ++;
+  } else {
+    while (num !=0) {
+      trailing = num % 10;
+      if (trailing == 0 ) {
+        ++counter;
+      } else {
+        break;
+      }
+      num /= 10;
+    }
+  }
+  cout << "Trailing zeroes: "<< counter;
+}
