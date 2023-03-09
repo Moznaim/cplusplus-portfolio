@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+  int given[10], number;
+
+  for(int i=0; i<10; i++) {
+    cout << "Enter a number: ";
+    cin >> given[i];
+    }
+
+    cout << "Enter an existing number in the array: ";
+    cin >> number;
+
+  for(int j = 0; j < 10; j++){
+     if(given[j] == number) {
+       cout << "Your number is in array number: "<<j;
+       break;
+     } else {
+       cout << "Given number does not exist in the array.";
+       break;
+     }
+        
+}  
+     }
+
+  
