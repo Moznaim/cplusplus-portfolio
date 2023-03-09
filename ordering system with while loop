@@ -1,0 +1,148 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main() {
+
+  float price, totalprice;
+  int  DN = 200, BL = 510, PKC = 35, CC = 50, ZEN = 150, AZU = 150, TTC = 325,
+      LF = 228, MOJ = 100, NAR = 175, VAP = 110, ERWIN = 90;
+
+  string name;
+
+  int amt1, amt2, amt3, amt4, amt5, amt6, amt7, amt8, amt9, amt10,       amt11, amt12;
+
+  int payment, change;
+  
+
+
+  // gives the customer the order list
+  
+  cout << "=-=-=-=-=-=-=-=-=-=THE BLUE BLOOD SHOP=-=-=-=-=-=-=-=-=-=" << endl << endl;
+  cout << "Our Catalogue:" << endl << endl;
+  cout << "Deathnote Notebook: " << DN << endl;
+  cout << "Bleach S10 Wristwatch: " << BL << endl;
+  cout << "Pokemon Cards (30 Packs): " << PKC << endl;
+  cout << "Cardcaptor Sakura Mousepad: " << CC << endl;
+  cout << "Zenki Neck Pillow: " << ZEN << endl;
+  cout << "Azumanga Daioh Sling Bag: " << AZU << endl;
+  cout << "Tony-Tony Chopper Bagpack: " << TTC << endl;
+  cout << "Luffy's Hat: " << LF << endl;
+  cout << "Mojacko's Plushy: " << MOJ << endl;
+  cout << "Naruto Mug: " << NAR << endl;
+  cout << "Vampire Knight Necklace: " << VAP << endl;
+  cout << "Shingeki no Kyojin Badge: " << ERWIN << endl;
+ cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl <<endl;
+  
+  cout << "Enter your name: ";
+  cin >> name;
+ cout << endl;
+  cout << "What is your desired items?" << endl;
+  cout << "Enter 0 if you do not want it." <<endl;
+
+  cout << "Deathnote Notebook: ";
+  cin >> amt1;
+  cout << "Bleach S10 Wristwatch: ";
+  cin >> amt2;
+  cout << "Pokemon Cards (30 Packs): ";
+  cin >> amt3;
+  cout << "Cardcaptor Sakura Mousepad: ";
+  cin >> amt4;
+  cout << "Zenki Neck Pillow: ";
+  cin >> amt5;
+  cout << "Azumanga Daioh Sling Bag: ";
+  cin >> amt6;
+  cout << "Tony-Tony Chopper Bagpack: ";
+  cin >> amt7;
+  cout << "Luffy's Hat: ";
+  cin >> amt8;
+  cout << "Mojacko's Plushy: ";
+  cin >> amt9;
+  cout << "Naruto Mug: ";
+  cin >> amt10;
+  cout << "Vampire Knight Necklace: ";
+  cin >> amt11;
+  cout << "Shingeki no Kyojin Badge: ";
+  cin >> amt12;
+  
+price = (amt1 * DN) + (amt2 * BL) + (amt3 * PKC)
+             + (amt4 * CC) + (amt5 * ZEN) + (amt6 * AZU)
+             + (amt7 * TTC) + (amt8 * LF) + (amt9 * MOJ) 
+             +  (amt10 * NAR) + (amt11 * VAP)
+             + (amt12 * ERWIN);
+float VAT = price * 0.10;
+totalprice = price + VAT;
+cout<< "Your total price is: " <<totalprice <<endl;
+
+cout << "Your payment is: ";
+cin >> payment;
+
+  while(payment < totalprice) {
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;  
+cout << "Not enough amount, Your total price is: " << totalprice << endl;
+cout << "Please enter another amount: ";
+cin >> payment;
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;
+  }
+if (payment >= totalprice) {
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;  
+cout << "                 The Blue Blood Shop" <<endl;
+cout << "                     Kahit Saan" << endl;
+cout << "                 Contact no.: 021932" << endl;
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;
+cout << "Client name: " << name <<endl <<endl;
+cout << "Item Name                    Price          Qty"<<endl;
+if (amt1 > 0) {
+  cout <<"Deathnote Notebook            "<<DN<<"            "<<amt1<<endl;
+  }
+if (amt2 > 0) {
+  cout << "Bleach S10 Wriswatch          "<<BL<<"            "<<amt2<<endl;
+  }
+if (amt3 > 0) {
+  cout << "Pokemon Cards 30 Packs        "<<PKC<<"             "<<amt3<< endl;
+  }
+if (amt4 > 0) {
+  cout << "Cardcaptor Sakura Mousepad    "<<CC<<"             "<<amt4<< endl;
+  }
+if (amt5 > 0) {
+  cout << "Zenki Neck Pillow             "<<ZEN<<"            "<<amt5<< endl;
+  }
+if (amt6 > 0) {
+  cout << "Azumanga Daioh Sling Bag      "<<AZU<<"            "<<amt6<< endl;
+  }
+if (amt7 > 0) {
+cout << "Tony-Tony Chopper Bagpack     "<<TTC<<"            "<<amt7<<endl;
+  }
+if (amt8 > 0) {
+cout << "Luffy's Hat                   "<<LF<<"            "<<amt8<<endl;
+}
+if (amt9 > 0) {
+cout << "Mojacko's Plushy              "<<MOJ<<"            "<<amt9<<endl;
+}
+if (amt10 > 0) {
+cout << "Naruto Mug                    "<<NAR<<"            "<<amt10<<endl;
+}
+if (amt11 > 0) {
+cout << "Vampire Knight Necklace       "<<VAP<<"            "<<amt11<<endl;
+}
+if (amt12 > 0) {
+cout << "Shingeki no Kyojin Badge      "<<ERWIN<<"             "<<amt12<<endl;
+}
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;
+cout << "VATable: " << VAT <<endl;
+cout << "Your amount of payment: " << payment <<endl;
+float change = payment - totalprice;
+cout << "Your change is: " << change <<endl;
+cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" <<endl;
+}
+
+
+
+  
+}
+  
+
+    
+  
+  
+  
