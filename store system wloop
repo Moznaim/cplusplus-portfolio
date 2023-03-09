@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float shampoo = 8.0, coffee= 13.0, milk= 12.0, noodles = 12.0, egg= 8, payment ;
+  cout << "===========================================" <<endl;
+  cout << "Items bought:" <<endl;
+  cout << "Shampoo: " << shampoo  <<endl;
+  cout << "Coffee: " << coffee  <<endl;
+  cout << "Powedered milk: " << milk  <<endl;
+  cout << "Noodles: " << noodles << endl;
+  cout << "2 Eggs: " << egg*2 <<endl;
+  
+  float total = shampoo + coffee + milk + noodles + (egg*2);
+  
+  cout<< "Your total is: " << total <<endl;
+  cout<< "Your payment is: ";
+  cin >> payment;
+  cout << endl;
+  if (payment >= 100){
+    float change = payment - total;
+    cout << "Thank you for your patronage your change is " <<      change << " pesos.";
+  }
+  else {
+    cout << "The amount you entered is insufficient \nplease try again.";
+  }
+  
+    
+}
