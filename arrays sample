@@ -1,0 +1,60 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+using std::setw;
+int main() {
+//an array with 5 rows and 2 collumns
+  int ar[5][2] = {{0,0}, {1,2},{2,4},{3,6},{4,8},};
+
+  //output each array elements
+  for (int i = 0; i <5; i++)
+    for (int j = 0; j<2; j++) {
+      cout <<"ar[" << i<< "][" << j << "]:";
+      cout <<ar[i][j]<<endl;
+    }
+
+  
+
+
+
+  
+/*  int numbers[5];
+
+  cout <<"Enter 5 numbers: "<< endl;
+  //store user input to array
+  for (int i=0; i<5; i++) {
+    cin >> numbers[i];
+  }
+
+  cout << "The numbers are: ";
+  //print array elements
+  for(int j=0; j<5; j++) {
+    cout<< numbers[j] << " ";
+  } */
+
+  
+  /* int n[10]; //n is an array of 10 integers
+//intialize elements of array
+  for (int i=0; i<10; i++) {
+    n[i] = i+100; //set elements
+  }
+  cout << "Element" << setw(13) << "Value" << endl;
+  //output each array element's value
+  for(int j=0; j<10; j++) {
+    cout << setw(7) <<j<<setw(13)<<n[j]<<endl;
+  } */
+
+
+  
+  /* string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  
+  for(int i=0; i<4; i++) {
+    cout << cars[i] << " ,";
+  }
+  int numbers[5] = {7, 5, 6, 12, 35};
+  cout << "\nThe numbers are: ";
+  for (int i = 0; i<5; i++) {
+    cout <<numbers[i] << " ";
+  } */
+  
+}
