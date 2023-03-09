@@ -1,0 +1,121 @@
+#include <iostream>
+#include <string>
+#include <array>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+//constasnt given or variables
+const int maxbook = 5;
+const int fine_day = 10;
+int finepay;
+int numBooks, difference;
+
+//store the information of the student
+struct Student {
+string name;
+int student_no;
+int yr_lvl;
+string course;
+};
+ 
+void printBook()
+{
+    string books[5] {"Moody Blues (MB)", "Wonder of U (WoU)",
+                     "Bites the Dust (BtD)", "Love Deluxe (LD)",
+                     "Black Sabbath (BS)"};
+
+  //Lists the book catalogue
+  cout << "Here is our book catalogue: " << endl << endl;
+  
+  for (int i = 0; i < 5; i++) {
+    cout << "Book title: " << books[i] << endl;
+  }
+}
+
+int solveChange(int i, int j) 
+{
+  return j - i;
+}
+
+int main() {
+  int first_month, second_month, first_day, second_day, first_year, second_year;
+  int payment, change;
+  //generates to input the given variable
+  cout << "Welcome to our Library!" << endl << endl;
+  
+  struct Student s;
+
+  cout << "Enter the student's name: ";
+  cin >> s.name;
+  cout << "Enter the student's number: ";
+  cin >> s.student_no;
+  cout << "Enter the student's year level: ";
+  cin>> s.yr_lvl;
+  cout << "Enter the student's course: ";
+  cin >> s.course;
+
+  system("clear");
+
+  printBook();
+
+int numBooks;
+cout << "How many books do you want to borrow? ";
+cin >> numBooks;
+
+string bookTitles[5];
+time_t dateBorrowed;
+time_t dateDue;
+
+  for (int i = 0; i < numBooks; i++) 
+  {
+    cout << "Enter book title: ";
+    cin >> bookTitles[i];
+  }
+
+
+  // Ask user to input first date
+cout << "Enter borrowed date: ";
+cin >> first_month >> first_day >> first_year;
+
+// Ask user to input second date
+cout << "Enter the due date: ";
+cin >> second_month >> second_day >> second_year;
+
+// Calculate the difference between dates
+int difference = (second_year - first_year) * 360 + (second_month - first_month) * 30 + (second_day - first_day);
+
+
+ system("clear");
+  cout << "Thank you for your patience." << endl << endl;
+  cout << "Here is your receipt." << endl << endl;
+  cout << "Customer's Information" << endl;
+  cout << "Name: " << s.name << endl;
+  cout << "Student number: " << s.student_no << endl;
+  cout << "Year Level: " << s.yr_lvl << endl;
+  cout << "Course: " << s.course << endl << endl;
+  cout << "Your book of choice: " << endl ;
+  
+   for (int i = 0; i < numBooks; i++){
+    cout << bookTitles[i] << endl;
+  }
+  cout << endl;
+// Output the difference
+    if(difference > 7) {
+    cout << "You have returned the books " << difference << " days late." << endl;
+    finepay = (fine_day * numBooks) * difference;
+    cout << "Your fine: " << finepay <<endl;
+    cout << "Your payment: ";
+    cin >> payment;
+    change = solveChange(finepay, payment);
+    cout << "Your change: " << change;
+  } else if (difference < 7) {
+    cout << "Thank you!";
+
+  }
+
+  }
+    
+  
+  
