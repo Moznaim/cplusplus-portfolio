@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+float price1=150.0, price2=60.0, price3=100.0, price4=125.0,
+      price5=320.0, price6=80.0, price7=90.0, payment, x;
+int amount1, amount2, amount3, amount4, amount5, amount6, amount7;
+
+cout << "=====WELCOME TO ERWIN'S VEGETABLE STORE! =====" <<endl;  
+cout << "==============================================" <<endl;
+cout << "Here's our competitive prices!" <<endl; 
+  cout << "Artichoke = "<< price1 <<endl; 
+  cout << "Corn = "<< price2 <<endl;
+  cout << "Garlic = "<< price3 <<endl;
+  cout << "Potato = "<< price4 <<endl;
+  cout << "Pumpkin = "<< price5 <<endl;
+  cout << "Taro Root = "<< price6 <<endl;
+  cout << "Radish = "<< price7 <<endl;
+cout << "==============================================" <<endl;
+cout << "How many would you like to buy? \nChoosing is not an option. ;)" <<endl;
+cout << "Artichoke: ";
+cin >> amount1;
+cout << "Corn: ";
+cin >> amount2;
+cout << "Garlic: ";
+cin >> amount3;
+cout << "Potato: ";
+cin >> amount4;
+cout << "Pumpkin: ";
+cin >> amount5;
+cout << "Taro Root: ";
+cin >> amount6;
+cout << "Radish: ";
+cin >> amount7;
+cout << "==============================================" <<endl;
+cout << "Please wait as we are processing \nyour prices..." <<endl;
+float totalprice = (amount1*price1) + (amount2*price2)
+                  + (amount3*price3) + (amount4*price4) 
+                  + (amount5*price5) + (amount6*price6)
+                 + (amount7*price7);
+cout << "Your total price is: " << totalprice <<endl ;
+cout << "Your payment: ";
+cin >> payment;
+while(payment < totalprice) {
+cout << "==============================================" <<endl;  
+cout << "Not enough amount, Your total price is: " << totalprice << endl;
+cout << "Please enter another amount: ";
+cin >> payment;
+cout << "==============================================" <<endl << endl << endl;
+
+if (payment >= totalprice) {
+cout << "==============================================" <<endl;  
+cout << "Your amount of payment: " << payment <<endl;
+float change = payment - totalprice;
+cout << "Your change is: " << change <<endl;
+cout << "=========COME AGAIN AND BUY AT US!============" <<endl;
+}
+}
+
+
+
+
+
+
+
+
+}
