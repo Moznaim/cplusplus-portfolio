@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int starting, ending, limit,difference,
+  sum = 0;
+
+    cout << "Enter starting: ";
+    cin >> starting;
+    cout << "Enter ending: ";
+    cin >> ending;
+    cout << "Enter limit: ";
+    cin >> limit;
+
+
+    int c = starting;
+  while(starting <= limit){
+    sum += c;
+    if(sum >= limit) {
+      break;
+    } 
+    cout << sum << endl;
+    c++;
+ 
+
+    
+
+
+    }
+  
+  
+  } 
