@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+float ave, sum = 0; 
+int counter, i= 0, number ;
+  
+
+  for (int i = 1; i<=5; i++) {
+    cout << "Please input your grades #"<< i <<": ";
+    cin >> counter;
+    sum += counter;
+
+    if (i == 5) {
+    ave = sum/ i ;
+    cout << "The average is: " << ave;
+   
+    }
+
+  }
+
+
+return 0;
+}
