@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+int sum = 0;
+int i = 1; //initialization 
+
+for ( int i = 0; i<=10 ; i++)
+{
+  cout << i << endl;
+  sum =i + sum;
+}
+cout << "The sum is: " <<sum ;
+  
+/*do 
+{
+        cout << i << endl;
+      sum = i + sum;
+      i++; //update expression
+}
+    while (i <= 10); // test expression 
+   cout << "The Sum is: " << sum; */
+
+
+
+
+
+  
+  /*
+int sum = 0;
+int i = 1; //initialization 
+  while (i <= 10) // test expression 
+    {
+      cout << i << endl;
+      sum = i + sum;
+      i++; //update expression
+    }
+  cout << "The Sum is: " << sum; */
+}
