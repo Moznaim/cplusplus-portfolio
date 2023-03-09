@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+int main() {
+float priceArtichoke=150.0, priceGarlic=60.0, priceCorn=100.0, priceRoot=125.0, pricePumpkin=320, pricePotato=80, priceRadish=90, payment;
+int amountArtichoke, amountGarlic, amountCorn, amountRoot, amountPumpkin, amountPotato, amountRadish;
+
+
+cout << "=====WELCOME TO ERWIN'S VEGETABLE STORE! =====" <<endl;  
+cout << "==============================================" <<endl;
+cout << "Here's our competitive prices!" <<endl; 
+  cout << "Artichoke = 150"<<endl; 
+  cout << "Corn = 100"<<endl;
+  cout << "Garlic = 60"<<endl;
+  cout << "Potato = 80"<<endl;
+  cout << "Pumpkin = 320"<<endl;
+  cout << "Taro Root = 125"<<endl;
+  cout << "Radish = 90"<<endl;
+cout << "==============================================" <<endl;
+cout << "How many would you like to buy? \nChoosing is not an option. ;)" <<endl;
+cout << "Artichoke: ";
+cin >> amountArtichoke;
+cout << "Corn: ";
+cin >> amountCorn;
+cout << "Garlic: ";
+cin >> amountGarlic;
+cout << "Potato: ";
+cin >> amountPotato;
+cout << "Pumpkin: ";
+cin >> amountPumpkin;
+cout << "Taro Root: ";
+cin >> amountRoot;
+cout << "Radish: ";
+cin >> amountRadish;
+cout << "==============================================" <<endl;
+cout << "Please wait as we are processing \nyour prices..." <<endl;
+float totalprice = (amountArtichoke * priceArtichoke) + (amountCorn * priceCorn) + (amountGarlic * priceGarlic) + (amountPumpkin * pricePumpkin) + (amountPotato * pricePotato) + (amountRoot * priceRoot) + (amountRadish * priceRadish);
+cout << "Your total price is: " << totalprice <<endl ;
+cout << "Your payment: ";
+cin >> payment;
+cout << "==============================================" <<endl <<endl <<endl;
+
+cout << "**********************************************"<< endl;
+cout << "=============THANK YOU FOR BUYING=============" <<endl;
+cout << "==========AT ERWIN'S VEGETABLE STORE==========" <<endl;
+cout << "=========HERE'S YOUR OFFICIAL RECEIPT=========" <<endl;
+cout << "Artichoke: " << amountArtichoke <<endl;
+cout << "Corn: " << amountCorn <<endl;
+cout << "Garlic: " << amountGarlic <<endl;
+cout << "Potato: " << amountPotato <<endl;
+cout << "Pumpkin: " <<amountPumpkin <<endl;
+cout << "Taro Root: " << amountRoot <<endl;
+cout << "Radish: " << amountRadish <<endl;
+cout << "==============================================" <<endl;
+cout << "Your amount of payment: " << payment <<endl;
+float change = payment - totalprice;
+cout << "Your change is: " << change <<endl;
+cout << "=========COME AGAIN AND BUY AT US!============" <<endl;
+cout << "**********************************************"<< endl;
+}
