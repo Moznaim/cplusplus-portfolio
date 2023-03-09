@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+  char grade;
+
+  cout << "Input grade letter: ";
+  cin >> grade;
+  switch (grade) {
+  case 'A':
+    cout << "Your grade is in the range of 96-100." << endl;
+    break;
+  case 'B':
+    cout << "Your grade is in the range of 91-95." << endl;
+    break;
+  case 'C':
+    cout << "Your grade is in the range of 86-90." << endl;
+    break;
+  case 'D':
+    cout << "Your grade is in the range of 80-85." << endl;
+    break;
+  case 'E':
+    cout << "Your grade is in the range of 79 and below." << endl;
+    break;
+  default:
+    cout << "Your grade letter is either invalid or not capitalized properly." << endl;
+  }
+}
