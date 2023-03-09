@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+float h, b, x, y, z;
+cout << "Area of Triangle Solver" <<endl <<endl;
+  
+cout <<"Please enter the height of the triangle: " ;
+cin >> h;
+cout << "Please enter the base of your triangle: " ;
+cin >> b;
+cout << endl;
+cout << "Type of triangle solver" <<endl <<endl;
+cout << "Please enter your first angle or X: ";
+cin >> x;
+cout << "Please enter your second angle or Y: ";
+cin >> y;
+cout << "Please enter your last angle or Z: ";
+cin >> z;
+cout << "==============================================";
+cout<< endl;
+if (x == y && y == z) {
+  cout << "Your triangle is Equilateral Triangle." <<endl;
+} 
+else if (x == y || y == z || x == z){
+  cout << "Your triangle is a Isosceles Triangle." <<endl;  
+}
+else
+  cout << "Your triangle is a Scalene Triangle." <<endl;
+
+float area = (h * b) /2 ;
+cout << "The area of your triangle is: " <<area;
+ 
+}
