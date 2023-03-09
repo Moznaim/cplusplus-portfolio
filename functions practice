@@ -1,0 +1,29 @@
+#include <iostream> 
+#include <string.h> 
+#include <stdio.h> 
+using namespace std;  
+
+double addition(int n1, int n2); //formal parameter
+// void addition(int n1, int n2)
+int main () {   
+int i, j;
+int sum = 0;
+  cout << "Enter first number: ";
+  cin >> i;
+
+  cout << "Enter second number: ";
+  cin >> j;
+cout << "val of first num: " << i << endl;
+cout << "val of 2nd num: " << j << endl;
+sum = addition(i,j);
+cout << "value of sum: " << sum <<endl;
+  
+
+  }
+
+double addition(int n1, int n2) {
+return n1 + n2;
+}
+
+  
+     /*   */
