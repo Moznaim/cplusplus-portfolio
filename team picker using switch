@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+  string name, team;
+  char gender;
+
+cout << "****************************************************"<< endl;
+cout << "**********************TEAM PICKER*******************" << endl;
+cout << "Enter name: ";
+cin >> name;
+cout << "Enter sex (M or F): ";
+cin >> gender; 
+switch (gender) {
+  case 'M':
+  cout << "Choose your team(Crocodile, Eagle or Jaguars): ";
+  cin >> team;
+  break;
+  case 'F':
+  cout << "Choose your team(Barbie, Prada or Payless): ";
+  cin >> team;
+  break;
+  default:
+  cout << "Invalid input!";
+  }
+  cout << endl;
+  cout << "Your name is " << name << " and you choose to be in team "<< team; 
+}
