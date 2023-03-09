@@ -1,0 +1,23 @@
+// forstatement.cpp
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+double rate = 50.14; // Exchange rate:
+// one Dollar to one Philippine peso
+
+cout << fixed << setprecision(2);
+
+
+cout << "\tDollar \Philippine Peso\n";
+
+
+for( int dollar = 1; dollar <= 5; ++dollar)
+cout << "\t " << dollar
+
+<< "\t " << dollar*rate << endl;
+return 0;
+}
