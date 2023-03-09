@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+string first_name;
+string last_name;
+char gender; 
+int amountRegular=1500, amountDeluxe=3000, amountGrand= 5000, age, daysRegular, daysDeluxe, daysGrand;
+float payment;
+
+cout << "======WELCOME TO THE GRAND GOTH HOTEL!=========" <<endl <<endl;
+cout << "Before you can have access to our services,\nPlease enter the following."<<endl;
+cout <<"Please enter your name: ";
+cin >> first_name;
+cout <<"Please enter your last name: "; 
+cin >> last_name;
+cout << "Please enter your age: ";
+cin >> age;
+cout << "Please enter your gender (M or F only): ";
+cin >> gender;
+
+cout << "==============================================" <<endl;
+cout << "Good day, "<< first_name << endl;
+cout << "This is the rooms that we offer:" <<endl;
+cout << "Regular: " <<amountRegular <<" per day" <<endl;
+cout << "Deluxe: " <<amountDeluxe <<" per day" <<endl;
+cout << "Grand: " <<amountGrand <<" per day" <<endl;
+cout << "==============================================" <<endl;
+cout << "How long will be staying in our care?" <<endl;
+cout << "Regular: ";
+cin >> daysRegular;
+cout << "Deluxer: ";
+cin >> daysDeluxe;
+cout << "Grand: ";
+cin >> daysGrand;
+cout << "==============================================" <<endl;
+cout << "Please wait as we are processing your query" << endl;
+float totalPrice = (daysRegular * amountRegular) + (daysDeluxe * amountDeluxe) + (daysGrand * amountGrand);
+cout << "Your total is: " << totalPrice <<endl;
+cout << "Your payment is: ";
+cin >> payment;
+float change = payment - totalPrice;
+cout << "**********THANK YOU FOR STAYING WITH US********"<< endl;
+cout << "Here is your receipt" <<endl;
+cout << "Regular: " << daysRegular << endl;
+cout << "Deluxe: " << daysDeluxe <<endl;
+cout << "Grand: " << daysGrand <<endl;
+cout << "You paid: " <<payment <<endl;
+cout << "Your change is: " <<change <<endl <<endl;
+cout<< "Here is your personal information that can \nbe used at the clerk when the your key is missing." <<endl;
+cout << "Full name: " << first_name << " " << last_name <<endl;
+cout << "Gender: " << gender <<endl;
+cout << "Age: " << age <<endl;
+cout << "**********************************************"<< endl;
+
+}
